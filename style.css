@@ -1,4 +1,6 @@
 /*css file*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /*header*/
 *{
 	padding:0;
@@ -43,8 +45,9 @@
     flex-wrap: wrap;
 }
 .nav b{
-    font-size: 40px;
+    font-size: 42px;
     margin-left: 20px;
+    font-family:'Dancing Script', cursive;
 }
 .menu{
     width:50%;
@@ -120,3 +123,81 @@
     color:white;
     background-color: #330000;
 }
+/*couple-section*/
+.couple-section{
+padding-top: 80px;  
+background-color: #ffbf66;
+padding-bottom: 40px;
+}
+.section-title h2{
+   font-family:'Dancing Script', cursive;
+   text-align: center;
+   font-size: 45px;
+   color:black;
+   margin-bottom: 80px;
+   letter-spacing: 2px;
+}
+.couple-section .couple{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 60px;
+    text-align: center;
+    position: relative;
+}
+.couple-section .couple:nth-child(2):before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height:90%;
+    background-color: #ff791a;
+}
+.couple-section .couple i.fa-heart{
+    position: absolute;
+    left: -15px;
+    width: 31px;
+    background-color: #ffbf66;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    top: 30%;
+    color: #f15;
+}
+.couple-section .couple img{
+    max-width: 290px;
+    width: 100%;
+    border-radius: 50%;
+    height: 50%;
+    border: 10px solid #f15;
+}
+.couple-section .couple h3{
+   font-size: 40px;
+   margin: 15px 0;
+   font-family:'Dancing Script', cursive;
+   font-weight: normal;
+   letter-spacing: 2px;
+   color: #330000
+}
+.couple-section .couple p{
+   font-size: 16px;
+   line-height: 26px;
+   margin: 0;
+}
+.couple-section .social-links{
+    padding-top: 30px;
+}
+.couple-section .social-links  i{
+ height: 32px;
+ width: 32px;
+ border: 1px solid #f15;
+ line-height: 30px;
+ text-align: center;
+ color: #f15;
+ border-radius: 50%;
+ transition: all 0.5s ease;
+}
+.couple-section .social-links  i:hover{
+    color: #ffff;
+    background-color: #f15;
+   }
